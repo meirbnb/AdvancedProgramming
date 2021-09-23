@@ -57,11 +57,12 @@ int main(){
 		if (maxLuck < person.getLuck())
 			luckiestPerson = person.getName(), maxLuck = person.getLuck();
 	cout << luckiestPerson << " is the luckiest person with the luck coefficient = " << maxLuck << "\n\n";
+	
 	cout << "Before using changeLuck(Person A, Person B):\n";
 	cout << people[3].getName() << "'s luck = " << people[3].getLuck() << '\n';
 	cout << people[4].getName() << "'s luck = " << people[4].getLuck() << "\n\n";
 
-	changeLuck(people[1], people[2]);
+	changeLuck(people[3], people[4]);
 
 	cout << "After using changeLuck(Person A, Person B):\n";
 	cout << people[3].getName() << "'s luck = " << people[3].getLuck() << '\n';
